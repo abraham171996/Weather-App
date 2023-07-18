@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Button, Container, Card, Input, CardHeader, CardBody, Heading, Stack, Box, Text, Spinner } from '@chakra-ui/react';
-
+import bgImage from "../assets/bgImage.jpg"
 const Main = () => {
   const [value, setValue] = useState("");
   const [cityName, setCityName] = useState("");
@@ -48,7 +48,7 @@ const Main = () => {
       <Input placeholder='Basic usage' value={value} onChange={handleChangeCity} />
       <Button onClick={handleClick} colorScheme='blue'>Button</Button>
       {weatherData && (
-        <Card textAlign={"center"} bgImg="url('public/1_GsImz-edoeuqCMfKxDus0w.jpg')" bgPosition="center" bgRepeat="no-repeat" bgSize={"cover"}>
+        <Card textAlign={"center"} bgImg={`url(${bgImage})`} bgPosition="center" bgRepeat="no-repeat" bgSize={"cover"}>
           <CardHeader>
             <Heading size='md'>{cityName}</Heading>
           </CardHeader>
