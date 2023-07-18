@@ -48,7 +48,7 @@ const Main = () => {
       <Input placeholder='Basic usage' value={value} onChange={handleChangeCity} />
       <Button onClick={handleClick} colorScheme='blue'>Button</Button>
       {weatherData && (
-        <Card textAlign={"center"} bgImg="url('public/sky-background-video-conferencing_23-2148639325.avif')" bgPosition="center" bgRepeat="no-repeat" bgSize={"cover"}>
+        <Card textAlign={"center"} bgImg="url('public/1_GsImz-edoeuqCMfKxDus0w.jpg')" bgPosition="center" bgRepeat="no-repeat" bgSize={"cover"}>
           <CardHeader>
             <Heading size='md'>{cityName}</Heading>
           </CardHeader>
